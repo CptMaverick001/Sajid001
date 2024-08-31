@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Interior Design Portal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            background: linear-gradient(135deg, #f5f2e7, #cfc8c0); /* Elegant coffee gradient */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .background-decorations {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .background-decorations .icon {
+            position: absolute;
+            font-size: 4rem;
+            color: rgba(0, 0, 0, 0.1);
+            opacity: 0.7;
+            animation: moveInCircles 30s infinite linear;
+        }
+
+        @keyframes moveInCircles {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(80px, 60px); }
+            50% { transform: translate(160px, 0); }
+            75% { transform: translate(80px, -60px); }
+            100% { transform: translate(0, 0); }
+        }
+
+        /* Adjusted icon positions for better spacing and visibility */
+        .background-decorations .icon:nth-child(1) { top: 5%; left: 5%; }
+        .background-decorations .icon:nth-child(2) { top: 20%; left: 10%; }
+        .background-decorations .icon:nth-child(3) { top: 35%; left: 15%; }
+        .background-decorations .icon:nth-child(4) { top: 50%; left: 20%; }
+        .background-decorations .icon:nth-child(5) { top: 65%; left: 25%; }
+        .background-decorations .icon:nth-child(6) { top: 75%; left: 30%; }
+        .background-decorations .icon:nth-child(7) { top: 70%; left: 40%; }
+        .background-decorations .icon:nth-child(8) { top: 55%; left: 50%; }
+        .background-decorations .icon:nth-child(9) { top: 40%; left: 60%; }
+        .background-decorations .icon:nth-child(10) { top: 30%; left: 70%; }
+        .background-decorations .icon:nth-child(11) { top: 25%; left: 80%; }
+        .background-decorations .icon:nth-child(12) { top: 15%; left: 85%; }
+        .background-decorations .icon:nth-child(13) { top: 10%; left: 70%; }
+        .background-decorations .icon:nth-child(14) { top: 25%; left: 55%; }
+        .background-decorations .icon:nth-child(15) { top: 40%; left: 45%; }
+        .background-decorations .icon:nth-child(16) { top: 55%; left: 35%; }
+
+        .signup-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 100%;
+            z-index: 1;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .signup-container h2 {
+            margin-bottom: 30px;
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group input {
+            border-radius: 50px;
+            padding-left: 20px;
+        }
+
+        .form-group .input-group-text {
+            border: none;
+            background: transparent;
+        }
+
+        .btn-primary {
+            width: 100%;
+            border-radius: 50px;
+            padding: 10px;
+            transition: background 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: #3c2a1f; /* Darker coffee color */
+        }
+
+        .social-login {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .social-login a {
+            margin: 0 10px;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+
+        .social-login a.facebook {
+            background: #3b5998;
+        }
+
+        .social-login a.google {
+            background: #db4437;
+        }
+
+        .social-login a.twitter {
+            background: #1da1f2;
+        }
+
+        .toggle-password {
+            cursor: pointer;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-decorations">
+        <!-- Decorative Interior Design Icons -->
+        <i class="fas fa-lightbulb icon"></i>
+        <i class="fas fa-archway icon"></i>
+        <i class="fas fa-couch icon"></i>
+        <i class="fas fa-rug icon"></i>
+        <i class="fas fa-paint-brush icon"></i>
+        <i class="fas fa-vase icon"></i>
+        <i class="fas fa-chair icon"></i>
+        <i class="fas fa-blinds icon"></i>
+        <i class="fas fa-television icon"></i>
+        <i class="fas fa-sink icon"></i>
+        <i class="fas fa-cabinet icon"></i>
+        <i class="fas fa-swatchbook icon"></i>
+        <i class="fas fa-lamp icon"></i>
+        <i class="fas fa-carpet icon"></i>
+        <i class="fas fa-clock icon"></i>
+        <i class="fas fa-ruler icon"></i>
+        <i class="fas fa-bed icon"></i>
+        <i class="fas fa-pillow icon"></i>
+        <i class="fas fa-picture-o icon"></i>
+    </div>
+
+    <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="signupName" placeholder="Full Name" required>
+                </div>
+                <div class="invalid-feedback">
+                    Please enter your full name.
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    </div>
+                    <input type="email" class="form-control" id="signupEmail" placeholder="Email" required>
+                </div>
+                <div class="invalid-feedback">
+                    Please enter a valid email.
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    </div>
+                    <input type="password" class="form-control" id="signupPassword" placeholder="Password" required>
+                    <div class="input-group-append">
+                        <span class="input-group-text toggle-password">
+                            <i class="fas fa-eye"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="invalid-feedback">
+                    Please enter a password.
+                </div>
+            </div>
+            <a button type="submit" href="index.html" class="btn btn-primary">Sign Up</button></a>
+        </form>
+
+        <div class="social-login">
+            <p>Or sign up with</p>
+            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="google"><i class="fab fa-google"></i></a>
+            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <p class="text-center">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <!-- JavaScript Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript for Form Validation and Interactions -->
+    <script>
+        // Password Visibility Toggle
+        document.querySelectorAll('.toggle-password').forEach(function(element) {
+            element.addEventListener('click', function() {
+                const passwordInput = this.parentElement.parentElement.querySelector('input');
+                const icon = this.querySelector('i');
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    icon.classList.remove('fa-eye');
+                    icon.classList.add('fa-eye-slash');
+                } else {
+                    passwordInput.type = 'password';
+                    icon.classList.remove('fa-eye-slash');
+                    icon.classList.add('fa-eye');
+                }
+            });
+        });
+
+        // Form Validation
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var form = document.getElementById('signupForm');
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            }, false);
+        })();
+    </script>
+</body>
+</html>

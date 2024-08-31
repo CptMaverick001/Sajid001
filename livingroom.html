@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Media Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f1eb;
+        }
+        
+
+        .hero {
+            background: url('https://silkinteriors.com.au/wp-content/uploads/2020/11/88-5021-Cranley-Wallpaper-by-Cole-Son.jpg') no-repeat center center;
+            background-size: cover;
+            color: #f8f9fa;
+            text-align: center;
+            padding: 100px 0;
+            margin-bottom: 50px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .btn-light-custom {
+            background-color: #f8f9fa;
+            color: #333;
+            border: none;
+        }
+
+        .btn-light-custom:hover {
+            background-color: #ddd;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #8e735b;
+        }
+
+        .video-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            border-radius: 10px;
+            border: 2px solid #8e735b;
+            margin-bottom: 30px;
+        }
+
+        .video-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .testimonials {
+            background-color: #8e735b;
+            color: #f8f9fa;
+            padding: 60px 0;
+        }
+
+        .testimonial-card {
+            background-color: #495057;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px #212529;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .testimonial-card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-card h5 {
+            margin-bottom: 10px;
+            font-size: 1.25rem;
+            color: #f8f9fa;
+        }
+
+        .testimonial-card p {
+            font-size: 1rem;
+            color: #ced4da;
+        }
+
+        .footer {
+            background-color: #212529;
+            color: #f8f9fa;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .carousel-item img {
+            border-radius: 10px;
+            object-fit: cover;
+            height: 400px;
+            border: 2px solid #8e735b;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Interactive Media Page</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#videos">Videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="container">
+            <h1>Welcome to Our Studio</h1>
+            <p>Explore stunning visuals and engaging videos to inspire your next project.</p>
+            <a href="#gallery" class="btn btn-light-custom btn-lg">View Gallery</a>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Image Gallery</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/ghk070123homeminifeature-007-660d85545cc73.jpeg?crop=1.00xw:0.736xh;0,0.221xh&resize=640:*" alt="Gallery Image 1">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://www.wakefit.co/blog/wp-content/uploads/2022/05/image-8.jpeg" alt="Gallery Image 2">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://cdn-yotpo-images-production.yotpo.com/instagram/42/17994460258386342/standard_resolution.jpg" alt="Gallery Image 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Featured Videos</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="video-embed">
+                        <iframe src="lr.mp4" frameborder="0" allow="autoplay" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="video-embed">
+                        <iframe src="lr3.mp4" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="https://source.unsplash.com/100x100/?people,portrait" alt="Client 1">
+                        <h5>Jane Doe</h5>
+                        <p>"The transformation of my living room was beyond my expectations. The team understood exactly what I wanted and delivered it flawlessly."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="https://source.unsplash.com/100x100/?people,smile" alt="Client 2">
+                        <h5>John Smith</h5>
+                        <p>"I was impressed with the professionalism and creativity. The new office design has made a huge difference in our work environment."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <img src="https://source.unsplash.com/100x100/?people,friendship" alt="Client 3">
+                        <h5>Emily Johnson</h5>
+                        <p>"Our bedroom now feels like a sanctuary. The design perfectly matches our style and needs. Highly recommend their services."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Interactive Media Page. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

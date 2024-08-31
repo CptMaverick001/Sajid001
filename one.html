@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Designers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* General body styles */
+        body {
+            background-color: #f4f1eb; /* Light beige background */
+            color: #4e3b2d; /* Dark coffee text color */
+            font-family: 'Georgia', serif; /* Classy serif font for an old-money look */
+        }
+
+        /* Header */
+        header {
+            background-color: #6f4e37; /* Warm brown */
+            color: #f4f1eb; /* Light beige text color */
+        }
+
+        header h1 {
+            font-size: 2.5rem; /* Larger font size for header */
+        }
+
+        header p {
+            font-size: 1.25rem; /* Larger font size for the lead text */
+        }
+
+        /* Card */
+        .card {
+            border: 1px solid #8e735b; /* Coffee brown */
+            border-radius: 0.5rem; /* Rounded corners */
+            overflow: hidden; /* Ensure content stays within bounds */
+            height: 100%; /* Full height for consistent card size */
+            display: flex;
+            flex-direction: column; /* Stack card content vertically */
+        }
+
+        .card-img-top {
+            height: 200px; /* Fixed height for card images */
+            object-fit: cover; /* Ensure image covers area without distortion */
+        }
+
+        .card-body {
+            background-color: #f4f1eb; /* Light beige */
+            color: #4e3b2d; /* Dark coffee brown */
+            flex: 1; /* Allow card body to grow */
+        }
+
+        .card-title {
+            font-size: 1.5rem; /* Slightly larger font size for titles */
+        }
+
+        .card-text {
+            font-size: 1rem; /* Standard font size for text */
+            margin-bottom: 1rem; /* Space between text and button */
+        }
+
+        .btn-primary {
+            background-color: #8e735b; /* Coffee brown */
+            border-color: #8e735b; /* Coffee brown */
+            color: #f4f1eb; /* Light beige */
+            font-size: 1rem; /* Standard font size */
+            padding: 0.75rem 1.5rem; /* Padding */
+        }
+
+        .btn-primary:hover {
+            background-color: #6f4e37; /* Warm brown */
+            border-color: #6f4e37; /* Warm brown */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1>Choose Your Interior Designer</h1>
+            <p class="lead">Find the perfect designer and start collaborating through our chatbox</p>
+        </div>
+    </header>
+
+    <!-- Designers Section -->
+    <section class="container my-5">
+        <div class="row">
+            <!-- Designer 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="card-img-top" alt="Designer 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Jane Doe</h5>
+                        <p class="card-text">Modern & Minimalist Interiors</p>
+                        <a href="profile-jane.html" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Designer 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="card-img-top" alt="Designer 2">
+                    <div class="card-body">
+                        <h5 class="card-title">John Smith</h5>
+                        <p class="card-text">Luxury & Classic Designs</p>
+                        <a href="profile-john.html" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Designer 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg" class="card-img-top" alt="Designer 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Emily Johnson</h5>
+                        <p class="card-text">Eco-Friendly & Sustainable Spaces</p>
+                        <a href="profile-emily.html" class="btn btn-primary">View Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

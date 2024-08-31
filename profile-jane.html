@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe - Interior Designer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* General body styles */
+        body {
+            background-color: #f4f1eb; /* Light beige background */
+            color: #4e3b2d; /* Dark coffee text color */
+            font-family: 'Georgia', serif; /* Classy serif font for an old-money look */
+        }
+
+        /* Header */
+        header {
+            background-color: #6f4e37; /* Warm brown */
+            color: #f4f1eb; /* Light beige text color */
+        }
+
+        header h1 {
+            font-size: 2.5rem; /* Larger font size for header */
+        }
+
+        header p {
+            font-size: 1.25rem; /* Larger font size for the lead text */
+        }
+
+        /* Profile Section */
+        .profile-img {
+            height: 300px; /* Fixed height for profile image */
+            object-fit: cover; /* Ensure image covers area without distortion */
+        }
+
+        /* Button */
+        .btn-success {
+            background-color: #8e735b; /* Coffee brown */
+            border-color: #8e735b; /* Coffee brown */
+            color: #f4f1eb; /* Light beige */
+            font-size: 1rem; /* Standard font size */
+            padding: 0.75rem 1.5rem; /* Padding */
+        }
+
+        .btn-success:hover {
+            background-color: #6f4e37; /* Warm brown */
+            border-color: #6f4e37; /* Warm brown */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1>Jane Doe</h1>
+            <p class="lead">Modern & Minimalist Interiors</p>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>About Jane Doe</h2>
+                <p>Jane Doe is an expert in modern and minimalist interior design, known for her clean lines and innovative use of space. With over 10 years of experience, she has transformed homes and offices into stylish, functional spaces.</p>
+                <h3>Portfolio</h3>
+                <ul>
+                    <li>Modern Apartment in New York</li>
+                    <li>Minimalist Office Space in San Francisco</li>
+                    <li>Luxury Condo in Miami</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzPRQ6LprnPzvvP-_vVO_nhSokwda8CMsnwQ&s" class="img-fluid rounded profile-img" alt="Jane Doe">
+            </div>
+        </div>
+        <div class="text-center my-4">
+            <a href="chat.html?designer=JaneDoe" class="btn btn-success">Chat with Jane</a>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

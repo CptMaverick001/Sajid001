@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Designer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- Chatbox Section -->
+    <section class="container my-5">
+        <div class="text-center">
+            <h2>Chat with <span id="designerName"></span></h2>
+            <!-- Placeholder for the chatbox -->
+            <div id="chatbox">
+                <!-- Here you would integrate a chat service -->
+                <!-- Example: A chat iframe from a service provider -->
+                <iframe src="https://your-chat-service.com/chat?designer=JaneDoe" width="100%" height="500px" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to dynamically insert the designer's name based on URL parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const designerName = urlParams.get('designer');
+        document.getElementById('designerName').textContent = designerName;
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
